@@ -7,9 +7,9 @@ WORKDIR /solution-src/
 COPY ./src/ /solution-src/
 
 # Create the binary file
-RUN mv solution.py solution
+RUN mv app.py cliapp
 
 # Then move the binary to the mounted volume (/src)
-# RUN cp -a solution /src/solution
+# RUN cp -a cliapp /src/solution
 
 CMD ["echo", "'CLI Template'"]
